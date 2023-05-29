@@ -39,16 +39,18 @@
 }
 
 .search-bar{
-    background-color: white;
-    border-radius: 5px;
-    border: 3px solid rgba(120, 120, 120, 0.374);
-    padding: 0.8rem 1rem;
-    width:100%;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: white;
+  border-radius: 5px;
+  border: 3px solid rgba(120, 120, 120, 0.374);
+  padding: 0.8rem 1rem;
+  width: 100%;
 }
 
+
 .search-bar>input{
-    border: none;
+    border: none;   
     outline: none;
 }
 
@@ -110,5 +112,16 @@
     .stats>:nth-child(2){
         font-size: 0.8rem;
     }
+    
+    .search-bar>input{
+        width:140px;
+    }
 
 }
+
+@media (max-width:350px){
+    .search-bar>input{
+        width:80px;
+    }
+}
+
